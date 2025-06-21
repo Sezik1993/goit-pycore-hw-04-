@@ -1,4 +1,4 @@
-#1 task 
+# 1 task 
 
 def total_salary(path):
     try:
@@ -15,15 +15,15 @@ def total_salary(path):
     count = 0
 
     for line in lines:
-            parts = line.strip().split(",")
-            try:
-                salary = int(parts[1])
-            except (IndexError, ValueError):
-                print(f"Некоректний рядок: {line.strip()}")
-                continue
-
-    total += salary
-    count += 1
+        parts = line.strip().split(",")
+        try:
+            salary = int(parts[1])
+        except (IndexError, ValueError):
+            print(f"Некоректний рядок: {line.strip()}")
+            continue
+        
+        total += salary
+        count += 1
 
     average = total / count if count > 0 else 0
     return total, average
@@ -32,4 +32,7 @@ total, average = total_salary('salaries.txt')
 if total is not None:
     print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
  
-total_salary('salaries.txt')
+
+
+# 2 task
+
