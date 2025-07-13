@@ -19,7 +19,7 @@ def print_directory_tree(path: Path, level=0):
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print(Fore.RED + "Помилка: не передано шлях до директорії." + Style.RESET_ALL)
-        print("Приклад запуску: python hw03.py /Users/serhiikolomoiets/Desktop/my_folder")
+        print("Приклад запуску: python hw03.py /шлях/до/папки")
     else:
         directory_path = Path(sys.argv[1])
         print_directory_tree(directory_path)
